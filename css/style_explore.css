@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body{
+    margin: 0;
+    background: rgba(84,28,130,1);
+    background-image: linear-gradient(-110grad, rgba(0, 0, 0, 0.541), rgb(61, 17, 61));
+    background-image: linear-gradient(110grad,  rgb(61, 17, 61), rgba(0, 0, 0, 0.541));
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    width: 0.7em;
+}
+body::-webkit-scrollbar-track{
+    background: rgb(79, 79, 79);
+    
+}
+body::-webkit-scrollbar-thumb{
+    background: hsl(0, 0%, 88%);
+    border-radius: 100vw;
+    border: 0.15em solid rgb(79, 79, 79);
+}
+
+.logo-logo{
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 1024px){
+    .txt_logo_arp{
+        display: none;
+    }
+    
+}
+
+.logo-arpeggio1{
+    padding: 0%;
+    width: 70px;
+    height: 70px;
+    background-image: url(img/logo_colorida-semfundo.png);
+    background-color: white;
+    background-size: 100px 100px;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    margin-top: 13px;
+    margin-left: 10px;
+    border-radius: 100px;
+    box-shadow: 5px 5px 7px rgba(1, 1, 1, 0.386);
+}
+
+.txt_logo_arp{
+    color: rgb(250, 250, 250);
+    text-shadow: 5px 5px 7px rgba(1, 1, 1, 0.386);
+    font-family: 'Galada', cursive;
+    margin-top: 16px;
+    font-size: 3pc;
+    margin-left: 10px;
+}
+
+.opcoes{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: -4.2rem;
+    margin-right: 3em;
+}
+
+button{
+    margin-left: 3em;
+    width: 13em;
+    height: 3em;
+    background: transparent;
+    border-radius: 3em;
+    border: 0.15em solid rgb(191, 35, 222);
+    box-shadow: 2px 2px 7px rgba(1, 1, 1, 0.386);
+}
+button:hover{
+    scale: 1.03;
+    animation: 0.3s ease-in-out;
+    background-color: rgb(149, 12, 207);
+    border: 0.15em solid rgb(220, 42, 255);
+    box-shadow: 2px 2px 7px rgba(172, 74, 202, 0.386);
+    cursor: pointer;
+}
+
+.opcoes button{
+    color: rgb(250, 250, 250);
+    text-shadow: 3px 3px 3px rgba(1, 1, 1, 0.386);
+    font-weight: bold;
+}
+
+.logo-login{
+    margin-right: -2em;
+    margin-left: 1.5em;
+    filter: drop-shadow(3px 3px 3px rgba(1, 1, 1, 0.386));
+}
+.logo-biblioteca{
+    margin-right: -2em;
+    margin-left: 1.5em;
+    filter: drop-shadow(3px 3px 3px rgba(1, 1, 1, 0.386));
+}
+.logo-playlist{
+    margin-right: -2em;
+    margin-left: 1.5em;
+    filter: drop-shadow(3px 3px 3px rgba(1, 1, 1, 0.386));
+}
+.box-pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-bottom: 0em;
+    fill: rgb(191, 122, 251);
+    filter: drop-shadow(3px 3px 2px rgba(1, 1, 1, 0.386));
+    margin-right: 0.5em;
+}
+.search:hover{
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    fill: rgb(134, 25, 156);
+}
+.search-txt{
+    border-radius: 1em;
+    text-align: justify;
+    height: 2em;
+    scale: 1.5;
+    border: none;
+    padding-left: 1em;
+    margin-right: 0.5em;
+    margin-bottom: 0em;
+    box-shadow: 3px 3px 2px rgba(1, 1, 1, 0.386);
+}
+
+article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 3.5em;
+    margin-bottom: 1.5em;
+}
+.banner-centro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    background-image: url(img/banner_editado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50rem;
+    height: 15rem;
+    background-position: center;
+    background-origin: content-box;
+    border-radius: 3rem;
+    box-shadow: 8px 8px 10px rgba(1, 1, 1, 0.386);
+    animation: zoomscale 4s ease-in-out infinite;
+    cursor: pointer;
+}
+@keyframes zoomscale{
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.05;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+h1{
+    color: rgb(250, 250, 250);
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 1rem;
+    text-shadow: 2px 2px 10px black;
+    margin-left: 0.6em;
+}
+
+.carousel-container{
+    position: relative;
+    
+}
+
+.carousel-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    height: 16em;
+}
+.carousel-slide::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-slide img{
+    width: 100%;
+    height: auto;
+}
+
+.imgs{
+    border-radius: 3em;
+    scale: .9;
+    box-shadow: 8px 8px 10px rgba(1, 1, 1, 0.386);
+}
+
+.button_c{
+    position: absolute;
+    padding: 0;
+    margin-left: 2em;
+    margin-right: 2em;
+    top: 30%;
+    width: 2em;
+    height: 6em;
+    background: rgb(127, 26, 185);
+    border: 12em solid rgb(0, 0, 0);
+    box-shadow: 2px 2px 7px rgba(40, 40, 40, 0.386);
+    color: #f8f8f8;
+    border: none;
+    cursor: pointer;
+}
+
+#prevBtn{
+    left: 0;
+}
+
+#nextBtn{
+    right: 0;
+}
+
+.card:hover{
+    scale: 1.05;
+    animation: 3s ease-in-out;
+}
+
+strong{
+    color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 4px 4px 10px black;
+    margin-top: 2px;
+}

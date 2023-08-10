@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Galada&family=Hubballi&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+.conteiner{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+img {
+    margin-left: 13px;
+    width: 100px;
+    margin-bottom: 0%;
+}
+
+h1{
+    font-family: 'Galada', sans-serif;
+    color: rgb(183, 63, 223);
+    margin-top: -10px;
+    font-size: 20px;
+    margin-left: 14px;
+    text-shadow: 2px 2px 4px #9430b58c
+}
+
+h2{
+    font-family: 'Galada', sans-serif;
+    color: rgb(143, 39, 196);
+    text-shadow: 2px 2px 4px #9430b58c
+}
+
+.textoapresentacao{
+    font-size: 30px;
+    color: rgba(84, 14, 118, 1);
+    text-shadow: 2px 2px 4px #9430b564;
+    font-family: 'Hubballi', cursive;
+}
+
+.bem_vindo{
+    margin-top: 5%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+
+
+.box_cadastro{
+    background: rgb(119, 49, 177);
+    background-image: linear-gradient(-110grad, rgba(143, 137, 137, 0.541), rgb(161, 49, 161));
+    background-image: linear-gradient(110grad,  rgb(183, 59, 183), rgba(148, 140, 140, 0.541));
+
+    color: aliceblue;
+    width: 350px;
+    margin-top: 4%;
+    border-radius: 20px;
+    margin-bottom: 0%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 10px 10px #60107b56;
+}
+
+.iconinicial{
+    margin-top: 10px;
+    font-size: 70px
+
+}
+
+.inscrevacom p{
+    font-size: 12px;
+    margin-left: 10px;
+    color: #9430b5;
+    transition: 0.8;
+}
+
+.inscrevacom{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 13px;
+    width: 230px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.575);
+    transition: 0.5s;
+}
+
+.inscrevacom ion-icon{
+    font-size: 22px;
+    color: #780b9d;
+    margin-top: 07px;
+}
+
+.formulario p{
+    font-size: 12px;
+    margin-bottom: 0%;
+}
+
+input {
+    font-size: 12px;
+    border: 1px solid white;
+    border-radius: 7px;
+    border-color: rgb(187, 55, 210);
+    width: 250px;
+    height: 35px;
+    background-color: rgb(240, 248, 255);
+    margin-top: 1%;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.botao_continuar{
+    display: flex;
+    justify-content: center;
+    all: unset;
+    
+    
+}
+
+.botao_continuar{
+    margin-bottom: 8px;
+    background-color: #c363e3;
+    padding: 10px 30px;
+    border-radius: 20px;
+    transition: 0.8s;
+    margin-top: 15px;
+    margin-left: 60px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.botao_continuar:hover{
+    background-color: #660b85;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.inscrevacom:hover{
+    background-color: #660b85;
+    color: #ffffff;
+    transition: 0.5s;
+    cursor: pointer;
+}

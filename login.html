@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/login.css">
+    <script src="src/Js/login.js"></script>
+    <title>Arpeggio</title>
+</head>
+
+<body>
+    
+    <header>
+        <h1> Entrar no </h1>
+        <h1 class="arpeggio"> Arpeggio</h1>
+    </header>
+    <main>
+
+        <div class="sal">
+
+            <div class="google">
+                <ion-icon name="logo-google"></ion-icon>
+                <p>Continuar com o Google</p>
+            </div>
+
+            <div class="facebook">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <p>Continuar com o Facebook</p>
+            </div>
+
+            <div class="appel">
+                <ion-icon name="logo-apple"></ion-icon>
+                <p>Continuar com o Apple</p>
+            </div>
+
+            <div class="telefone">
+                <p>Continuar com o Número de Telefone</p>
+            </div>
+        </div>
+
+        <div class="sale">
+            <form name="meuFormulario" onsubmit="return validarFormulario()">
+                <p class="email">E-mail ou nome de usuário:</p>
+                <input placeholder="E-mail ou nome de usuário" type="email" id="email" name="email" autocomplete="off" required>
+
+                <p class="senha">Senha:</p>
+                <input placeholder="Senha" type="password" id="senha" name="senha" autocomplete="off" required>
+
+                <div class="boxcheck">
+                    <p class="lembrar">Lembrar de mim:</p>
+                    <input type="radio" class="meuCheckbox" name="meuCheckbox" value="valor" required>
+                    <p class="simenao">Não</p>
+                    <input type="radio" class="meuCheckbox" name="meuCheckbox" value="valor" required>
+                    <p class="simenao">Sim</p>
+                </div>
+
+            <div>
+                <input class="botaoentrar" type="submit" value="Entrar">
+            </div>
+
+            </form>
+            
+            
+            <p class="esqueceu"><a href="#">Esqueceu sua senha?</a></p>
+        </div>
+    </main>
+    <footer>
+        <p>Não tem uma conta? <a href="cadastro1.html"><strong>Inscrever-se no Arpeggio</strong></a></p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="img" href="css/img/logo_preto-branco.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap" rel="stylesheet">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap">
+        <link rel="stylesheet" href="css/style_playlist.css">
+        <title>Arpeggio</title>
+    </head>
+    <body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="bar_close()">&times;</a>
+        <nav class="opc-side">
+            <svg class="icons" xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 576 512"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg></ion-icon> 
+            <span id="linkSpanHome">Home</span>
+        </nav>
+        <nav class="opc-side">
+            <svg class="icons" xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 512 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            <span id="linkSpanLib">Biblioteca</span>
+        </nav>
+        <nav class="opc-side">
+            <svg class="icons" xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 512 512"><path d="M128 32h32c17.7 0 32 14.3 32 32V96H96V64c0-17.7 14.3-32 32-32zm64 96V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V388.9c0-34.6 9.4-68.6 27.2-98.3C40.9 267.8 49.7 242.4 53 216L60.5 156c2-16 15.6-28 31.8-28H192zm227.8 0c16.1 0 29.8 12 31.8 28L459 216c3.3 26.4 12.1 51.8 25.8 74.6c17.8 29.7 27.2 63.7 27.2 98.3V448c0 17.7-14.3 32-32 32H352c-17.7 0-32-14.3-32-32V128h99.8zM320 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V96H320V64zm-32 64V288H224V128h64z"/></svg>
+            <span id="linkSpanSearch">Procurar</span>
+        </nav>
+        <nav>
+            <svg class="icons" xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+            <span>Playlist:</span>
+        </nav>
+        <nav class="opc-side">
+            <div class="card-side">
+                <img class="img"  src="https://source.unsplash.com/random/50x50/?Music/" alt="">
+                <div class="subtitulo">MPB</div>
+            </div>
+        </nav>
+        <nav class="opc-side">
+            <div class="card-side">
+                <img class="img"  src="https://source.unsplash.com/random/50x50/?Song/" alt="">
+                <div class="subtitulo">Rock</div>
+            </div>
+        </nav>
+        <nav class="opc-side">
+            <div class="card-side">
+                <img class="img"  src="https://source.unsplash.com/random/50x50/?Funk/" alt="">
+                <div class="subtitulo">Funk</div>
+            </div>
+        </nav>
+    </div>
+    <button class="openbtn" onclick="bar_open()">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="toggle">
+            <div class="bars" id="bar1"></div>
+            <div class="bars" id="bar2"></div>
+            <div class="bars" id="bar3"></div>
+        </label>
+    </button>
+
+    <main>
+        <article>
+
+            <span>
+                <h1>Seja Bem-Vindo(a)!</h1>
+            </span>
+
+            <span>
+                <h3>Faça já a sua Playlist:</h3>
+                <div class="container">
+                    <div class="gallery-wrapper">
+                        <div class="gallery">
+                            <div class="card">
+                                <div class="emptyimg">
+                                    <svg class="plus" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><path d="M64 80c-8.8 0-16 7.2-16 16V416c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V96c0-8.8-7.2-16-16-16H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="emptyimg">
+                                    <svg class="plus" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><path d="M64 80c-8.8 0-16 7.2-16 16V416c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V96c0-8.8-7.2-16-16-16H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg>
+                                </div>                            
+                            </div>
+                            <div class="card">
+                                <div class="emptyimg">
+                                    <svg class="plus" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><path d="M64 80c-8.8 0-16 7.2-16 16V416c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V96c0-8.8-7.2-16-16-16H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg>
+                                </div>                            
+                            </div>
+                            <div class="card">
+                                <div class="emptyimg">
+                                    <svg class="plus" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><path d="M64 80c-8.8 0-16 7.2-16 16V416c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V96c0-8.8-7.2-16-16-16H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg>
+                                </div>                            
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </span>
+            <h3>Playlists sugeridas:</h3>
+            <div class="recomendacoes_mixes">
+                <div class="container">
+                    <div class="gallery-wrapper">
+                        <div class="gallery">
+                            <div class="card">
+                                <img class="img"  src="https://source.unsplash.com/random/200x200/?Music/" alt="">
+                                <p>
+                                    <strong>
+                                        MPB
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="card">
+                                <img class="img"  src="https://source.unsplash.com/random/200x200/?Song/" alt="">
+                                <p>
+                                    <strong>
+                                        MPB
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="card">
+                                <img class="img"  src="https://source.unsplash.com/random/200x200/?Musician/" alt="">
+                                <p>
+                                    <strong>
+                                        MPB
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="card">
+                                <img class="img"  src="https://source.unsplash.com/random/200x200/?Musical/" alt="">
+                                <p>
+                                    <strong>
+                                        MPB
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="card">
+                                <img class="img"  src="https://source.unsplash.com/random/200x200/?Playlist/" alt="">
+                                <p>
+                                    <strong>
+                                        MPB
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="card">
+                                <img class="img"  src="https://source.unsplash.com/random/200x200/?Musica/" alt="">
+                                <p>
+                                    <strong>
+                                        MPB
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    
+    <script src="js/script_playlist.js"></script>
+    </body>
+</html>

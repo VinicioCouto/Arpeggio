@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Galada&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body{
+    background: rgba(84,28,130,1);
+    background-image: linear-gradient(-110grad, rgba(0, 0, 0, 0.541), rgb(61, 17, 61));
+    background-image: linear-gradient(110grad,  rgb(61, 17, 61), rgba(0, 0, 0, 0.541));
+
+    color: aliceblue;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    margin: 0%;
+    flex-direction: column;
+    
+    
+}
+
+header{
+    display: flex;
+    margin: 0%;
+    justify-content: center;
+    
+}
+
+h1{
+   padding: 4px;
+   margin-bottom: 0%;
+   font-size: 30px;
+}
+
+.arpeggio{
+    font-family: 'Galada', cursive;
+    font-size: 29px;
+}
+
+.sal{
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sale{
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.google{
+    display: flex;
+    border: 1px white solid;
+    margin: 3px;
+    padding: 10px 50px 10px 60px;
+    border-radius: 20px;
+    border-color: rgba(220, 93, 243, 1);
+    transition: 0.8s;
+}
+
+ion-icon{
+    padding-right: 10px;
+    padding-left: 0px;
+    padding-top: -3px;
+    font-size: 19px;
+    
+}
+
+p {
+    margin: 0%;
+    padding-top: 2px;
+    font-size: 13px;
+    
+}
+
+.botaoentrar{
+    all: unset;
+}
+
+.facebook{
+    display: flex;
+    border: 1px white solid;
+    margin: 3px;
+    padding: 10px 47px 10px 47px;
+    border-radius: 20px;
+    border-color: rgba(220, 93, 243, 1);
+    transition: 0.8s;
+}
+
+.appel{
+    display: flex;
+    border: 1px white solid;
+    margin: 3px;
+    padding: 10px 60px 10px 60px;
+    border-radius: 20px;
+    border-color: rgba(220, 93, 243, 1);
+    transition: 0.8s;
+}
+
+.telefone{
+    display: flex;
+    border: 1px white solid;
+    margin: 3px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    border-color: rgba(220, 93, 243, 1);
+    transition: 0.8s;
+}
+
+
+.email{
+    font-size: 13px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+
+}
+
+form #email, #senha{
+    outline: unset;
+    font-size: 12px;
+    border: 1px solid white;
+    border-radius: 7px;
+    border-color: rgba(220, 93, 243, 1);
+    width: 300px;
+    height: 35px;
+    background-color: rgba(240, 248, 255, 0);
+    margin-top: 1%;
+    color: aliceblue;
+}
+
+.senha{
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-top: 6%;
+}
+
+.lembrar{
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-top: 2%;
+    margin-bottom: 5px;
+}
+
+.boxcheck{
+    display: flex;
+}
+
+.meuCheckbox{
+    font-size: 2px;
+    margin-left: 40px;
+}
+
+.simenao{
+margin-top: 2%;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+}
+.botaoentrar{
+    background-color: rgba(229, 87, 255, 0.59);
+    padding: 9px 60px;
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: 0.8s;
+    margin-left: 65px;
+    
+}
+
+.esqueceu{
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.google:hover {
+    background-color: rgba(229, 87, 255, 0.59);
+    color: rgb(255, 255, 255);
+    box-shadow: black;
+    transform: scale(1.1);
+}
+
+.facebook:hover {
+    background-color: rgba(229, 87, 255, 0.59);
+    color: rgb(255, 255, 255);
+    box-shadow: black;
+    transform: scale(1.1);
+}
+
+.appel:hover {
+    background-color: rgba(229, 87, 255, 0.59);
+    color: rgb(255, 255, 255);
+    box-shadow: black;
+    transform: scale(1.1);
+}
+
+.telefone:hover {
+    background-color: rgba(229, 87, 255, 0.59);
+    box-shadow: black;
+    transform: scale(1.1);
+}
+
+.botaoentrar:hover {
+    background-color: rgba(79, 23, 89, 0.87);
+    box-shadow: black;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.esqueceu:hover {
+    color: rgba(229, 124, 247, 0.59);
+}
+
+strong:hover {
+    color: rgba(229, 124, 247, 0.59);
+}

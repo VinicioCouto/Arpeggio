@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: rgba(84,28,130,1);
+    background-image: linear-gradient(-110grad, rgba(0, 0, 0, 0.541), rgb(61, 17, 61));
+    background-image: linear-gradient(110grad,  rgb(61, 17, 61), rgba(0, 0, 0, 0.541));
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.main_section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-logo{
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.logo-arpeggio1{
+    padding: 0%;
+    width: 70px;
+    height: 70px;
+    background-image: url(img/logo_colorida-semfundo.png);
+    background-color: rgb(250, 250, 250);
+    background-size: 100px 100px;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    margin-top: 13px;
+    margin-left: 10px;
+    border-radius: 100px;
+    box-shadow: 5px 5px 7px rgba(1, 1, 1, 0.386);
+}
+
+.txt_logo_arp{
+    color: white;
+    text-shadow: 5px 5px 7px rgba(1, 1, 1, 0.386);
+    font-family: 'Galada', cursive;
+    margin-top: 16px;
+    font-size: 3pc;
+    margin-left: 10px;
+}
+
+.secao1{
+    display: flex;
+    flex-direction: column;
+    margin-top: -5rem;
+    position: relative;
+    margin-left: 2rem;
+}
+.secao2{
+    display: flex;
+    margin-top: -1rem;
+    margin-left: -8rem;
+}
+.botoes{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: 15rem;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+.botoes button{
+    border-radius: 15rem;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    height: 3rem;
+    color: rgb(56, 15, 56);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    box-shadow: 3px 3px 15px rgba(1, 1, 1, 0.386);
+    background-color: rgba(255, 255, 255, 0.758);
+    border: 2px solid rgb(51, 22, 74);
+    text-shadow: 1px 1px 4px rgba(1, 1, 1, 0.386);
+    transition: 0.3s ease-in-out;
+}
+.botoes button:hover{
+    margin-left: 0.018rem;
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
+    background-color: #e3d1e6;
+    border: 3px solid rgb(111, 24, 125);
+    cursor: pointer;
+}
+.entrar:hover{
+    margin-left: -0.5rem;
+    font-weight: bolder;
+}
+.cadastrar:hover{
+    margin-left: -0.5rem;
+    font-weight: bolder;
+}
+.explorar:hover{
+    margin-left: -0.5rem;
+    font-weight: bolder;
+}
+
+.redes_sociais{
+    color: white;
+    font-family: 'Hubballi', cursive;
+    text-shadow: 5px 5px 7px rgba(1, 1, 1, 0.386);
+    width: 14rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    margin-left: 2.1rem;
+    font-size: 1.1rem;
+}
+.icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2rem;
+    margin-top: 1rem;
+    filter: drop-shadow(5px 5px 7px rgba(1, 1, 1, 0.386));
+}
+.twitter{
+    padding-left: 3rem;
+    width: 2rem;
+    height: 2rem;
+    transition: 0.3s ease-in-out;
+}
+.twitter:hover{
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
+    filter: drop-shadow(5px 5px 7px rgb(111, 24, 125));
+    cursor: pointer;
+}
+.instagram{
+    width: 2rem;
+    height: 2rem;
+    transition: 0.3s ease-in-out;
+}
+.instagram:hover{
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
+    filter: drop-shadow(5px 5px 7px rgb(111, 24, 125));
+    cursor: pointer;
+}
+
+.imagens{
+    display: flex;
+    max-width: 100%
+}
+.imagens div{
+    margin-right: 1rem;
+    max-width: 100%
+}
+.img1-home{
+    background-image: url(img/anitta.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 12rem;
+    height: 30rem;
+    background-position: center center;
+    background-origin: content-box;
+    border-radius: 3rem;
+    margin-top: 6rem;
+    box-shadow: 5px 5px 7px rgba(1, 1, 1, 0.386);
+    animation: neon-animation 3s linear infinite;
+    animation-iteration-count: infinite;
+    transition: 0.3s ease-in-out;
+    max-width: 100%
+}
+.img2-home{
+    background-image: url(img/djavan.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 12rem;
+    height: 30rem;
+    background-position: center center;
+    background-origin: content-box;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    box-shadow: 5px 5px 7px rgba(1, 1, 1, 0.386);
+    animation: neon-animation 3s linear infinite;
+    animation-iteration-count: infinite;
+    transition: 0.3s ease-in-out;
+    max-width: 100%
+}
+.img3-home{
+    background-image: url(img/ariana.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 12rem;
+    height: 30rem;
+    background-position: center center;
+    background-origin: content-box;
+    border-radius: 3rem;
+    margin-top: 4rem;
+    box-shadow: 5px 5px 7px rgba(1, 1, 1, 0.386);
+    animation: neon-animation 3s linear infinite;
+    animation-iteration-count: infinite;
+    transition: 0.3s ease-in-out;
+    max-width: 100%
+}
+.img4-home{
+    background-image: url(img/the-weeknd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 12rem;
+    height: 30rem;
+    background-position: center center;
+    background-origin: content-box;
+    border-radius: 3rem;
+    margin-top: 0rem;
+    box-shadow: 5px 5px 7px rgba(1, 1, 1, 0.386);
+    animation: neon-animation 3s ease-in-out infinite;
+    animation-iteration-count: infinite;
+    transition: 0.3s ease-in-out;
+    max-width: 100%
+}
+
+@keyframes neon-animation{
+    0% {
+        box-shadow: 0 0 10px 0px #8802ac;
+    }
+    50% {
+        box-shadow: 0 0 20px 5px #620e62;
+    }
+    100% {
+        box-shadow: 0 0 10px 0 #440a44;
+    }
+}

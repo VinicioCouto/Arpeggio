@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Galada&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body{
+    background: rgba(84,28,130,1);
+    background-image: linear-gradient(-110grad, rgba(0, 0, 0, 0.541), rgb(61, 17, 61));
+    background-image: linear-gradient(110grad,  rgb(61, 17, 61), rgba(0, 0, 0, 0.541));
+    background-attachment: fixed;
+
+    color: aliceblue;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    margin: 0%;
+    flex-direction: column;
+}
+body::-webkit-scrollbar{
+    width: 0.7em;
+}
+body::-webkit-scrollbar-track{
+    background: rgb(79, 79, 79);
+
+}
+body::-webkit-scrollbar-thumb{
+    background: hsl(0, 0%, 88%);
+    border-radius: 100vw;
+    border: 0.15em solid rgb(79, 79, 79);
+}
+
+header{
+    display: flex;
+    margin: 0%;
+    justify-content: center;
+}
+
+h1{
+    padding: 4px;
+    margin-bottom: 0%;
+    font-size: 30px;
+}
+
+.continua{
+    margin-top: 30px;
+    margin-right: 5px;
+    font-size: 25px;
+}
+
+.conteiner{
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nomeusuario h2 {
+    font-size: 13px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+
+.nome{
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 7px;
+    border-color: rgba(220, 93, 243, 1);
+    background-color: rgba(16, 16, 16, 0);
+    margin-top: 1%;
+    color: aliceblue;
+    margin-top: 0px;
+    height: 20px;
+    width: 330px;
+    height: 45px;
+    padding-left: 10px;
+    margin-left: 60px;
+}
+
+
+#dia{
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    border-color: rgba(220, 93, 243, 1);
+    padding: 10px -0px 10px 5px;
+    background-color: rgba(240, 248, 255, 0);
+    margin-top: 0%;
+    color: aliceblue;
+    width: 50px;
+    height: 20px;
+    margin-left: 30px;
+    margin-left: 60px;
+    
+}
+
+#mes{
+
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    border-color: rgba(220, 93, 243, 1);
+    padding: 10px -0px 10px 5px;
+    background-color: rgba(240, 248, 255, 0);
+    margin-top: 0%;
+    color: aliceblue;
+    width: 50px;
+    height: 20px;
+    margin-left: 30px;
+}
+
+#ano{
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    border-color: #dc5df3;
+    padding: 10px -0px 10px 5px;
+    background-color: rgba(240, 248, 255, 0);
+    margin-top: 0%;
+    color: aliceblue;
+    width: 60px;
+    height: 20px;
+    margin-left: 30px;
+}
+
+.genero{
+    margin-top: 30px;
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+.form-check-input{
+    font-size: 15px;
+    border: 1px solid white;
+    border-color: rgba(220, 93, 243, 1);
+    padding: 10px -0px 10px 5px;
+    background-color: rgba(240, 248, 255, 0);
+    margin-top: 0%;
+    color: aliceblue;
+    margin-left: 30px;
+    margin-top: 10px;
+    
+}
+
+.formasculino{
+    font-size: 15px;
+    border: 1px solid white;
+    border-color: rgba(220, 93, 243, 1);
+    padding: 10px -0px 10px 5px;
+    background-color: rgba(240, 248, 255, 0);
+    margin-top: 0%;
+    color: aliceblue;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.titulogenero{
+    font-size: 20px;
+    margin-left: 9px;
+}
+
+.musicage{
+    font-size: 36px;
+    margin-left: 30px;
+    border: #dc5df3 solid 1px;
+    border-radius: 50px;
+    padding: 10px;
+    transition: 1.0s;
+}
+
+.iconmusica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nomegenero{
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.nomegenero2{
+    margin-left: -16px;
+    display: flex;
+    justify-content: center;
+}
+
+.nomegenero p {
+    margin-left: 25px;
+    margin-top: 0px;
+}
+
+.nomegenero2 p{
+    margin-left: 50px;
+    margin-top: 0px;
+}
+
+.titulo_m{
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.botaoinscreva{
+    all: unset;
+}
+
+.botaoinscreva{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    margin-left: 160px;
+    background-color: #dc5df3;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    transition: 1.0s;
+}
+
+
+
+footer{
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+footer p {
+    margin: 0%;
+    font-size: 13px;
+    margin-right: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: 1.0s;
+}
+
+strong:hover {
+    color: rgba(229, 124, 247, 0.59);
+}
+
+
+.musicage:hover{
+    background-color: #dc5df3;
+    cursor: pointer;
+}
+
+.botaoinscreva:hover{
+    background-color: #651273;
+    cursor: pointer;
+}

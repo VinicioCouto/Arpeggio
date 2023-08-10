@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="src/css/cadastro2.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <title>Arpeggio</title>
+    </head>
+    <body>
+        <header>
+            <ion-icon class="continua" name="person-add-outline"></ion-icon>
+            <h1>Continuando...</h1>
+        </header>
+
+        <main>
+            <div class="conteiner">
+                <p>Queremos saber um pouco mais sobre você.</p>
+
+                <form class="nomeusuario" name="meuFormulario" onsubmit="return validarFormulario()">
+                    <h2>Nome de Usuário:</h2>
+                    <input type="text" class="nome" placeholder="Nome de Usuário" required>
+                    
+                    <h2>Data de Nacimento:</h2>
+                    <input type="text" placeholder="DD" id="dia" name="dia" required>
+                    <input type="text" placeholder="MM" id="mes" name="mes" required>
+                    <input type="text" placeholder="AAAA" id="ano" name="ano" required>
+                    
+                    <h2 class="titulogenero">Qual é o seu gênero?</h2>
+                    <input class="formasculino" type="radio" name="sexo" value="option1"  >
+                    <label class="form-check-label" for="inlineCheckbox1">Masculino</label>
+                    <input class="form-check-input" type="radio" name="sexo" value="option1"  >
+                    <label class="form-check-label" for="inlineCheckbox1">Feminino</label>
+                    <input class="form-check-input" type="radio" name="sexo" value="option1"  >
+                    <label class="form-check-label" for="inlineCheckbox1">Não binário</label>
+                    <br>
+                    <input class="formasculino" type="radio" name="sexo" value="option1"  >
+                    <label class="form-check-label" for="inlineCheckbox1">Outros</label>
+                    <input class="form-check-input" type="radio" name="sexo" value="option1"  >
+                    <label class="form-check-label" for="inlineCheckbox1">Prefiro não dizer</label>
+                    
+                    <div class="conteinermusical">
+                        <h3 class="titulo_m">Quais são os seus gêneros musicais favoritos?</h3>
+                        
+                        <div class="pai"> 
+                            <div class="filho">
+                                <div class="iconmusica">
+                                    <ion-icon class="musicage" name="musical-note-outline"></ion-icon>
+                                    <ion-icon class="musicage" name="musical-notes-outline"></ion-icon>
+                                    <ion-icon class="musicage" name="musical-note-outline"></ion-icon>
+                                    <ion-icon class="musicage" name="musical-notes-outline"></ion-icon>
+                                </div>
+                                <div class="nomegenero">
+                                    <p>Forró</p>
+                                    <p>Sertanejo</p>
+                                    <p>Pagode</p>
+                                    <p>Eletrônica</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pai">
+                            <div class="filho">
+                                <div class="iconmusica">
+                                    <ion-icon class="musicage" name="musical-notes-outline"></ion-icon>
+                                    <ion-icon class="musicage" name="musical-note-outline"></ion-icon>
+                                    <ion-icon class="musicage" name="musical-notes-outline"></ion-icon>
+                                    <ion-icon class="musicage" name="musical-note-outline"></ion-icon>
+                                </div>
+                                <div class="nomegenero2">
+                                    <p>Funk</p>
+                                    <p>Pop</p>
+                                    <p>Rock</p>
+                                    <p>MPB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input id="btnfinal" class="botaoinscreva" type="submit" value="Inscreva-se">
+                </form>
+            </div>
+        </main>
+    <script src="src/Js/cadasro2.js"></script>
+    </body>
+</html>

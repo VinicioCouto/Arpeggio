@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/cadastro1.css">
+    <link rel="stylesheet" href="src/css/resp.css">
+    <script src="src/Js/cadastro1.js"></script>
+    <title>Arpeggio</title>
+</head>
+
+<body>
+    <main>
+        <div class="conteiner">
+            <div class="bem_vindo">
+                <img src="src/img/Logotipo.png" alt="logoarpeggio">
+                <h1>Arpeggio</h1>
+                <h2>Bem-Vindo</h2>
+                <p class="textoapresentacao">O Arpeggio está disponível em todas as plataformas, incluindo computadores,
+                    tablets e dispositivos
+                    móveis, permitindo que os usuários acessem sua música a qualquer hora e em qualquer lugar.</p>
+            </div>
+
+            <div class="box_cadastro">
+                <ion-icon class="iconinicial" name="person-circle-outline"></ion-icon>
+
+                <div class="box-redes">
+                    <div class="inscrevacom">
+                        <ion-icon id="google" name="logo-google"></ion-icon>
+                        <p class="textoeditar">Inscreva-se com o Google</p>
+                    </div>
+
+                    <div class="inscrevacom">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <p>Inscreva-se com o Facebook</p>
+                    </div>
+
+                    <div class="inscrevacom">
+                        <ion-icon id="apple" name="logo-apple"></ion-icon>
+                        <p class="textoeditar">Inscreva-se com o Apple</p>
+                    </div>
+                </div>
+
+
+                <div class="formulario">
+                    <form name="meuFormulario" onsubmit="return validarFormulario()">
+                        <div class="forms">
+                            <p>Nome:</p>
+                            <input placeholder="Nome" type="text" id="nome" name="nome" autocomplete="off" required>
+
+                            <p class="email">E-mail:</p>
+                            <input placeholder="E-mail" type="email" id="email" name="email" autocomplete="off" required>
+
+                            <p class="senha">Senha:</p>
+                            <input placeholder="Senha" type="password" id="senha" name="senha" required>
+
+                        </div>
+                        <input class="botao_continuar" type="submit" value="Continuar">
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
